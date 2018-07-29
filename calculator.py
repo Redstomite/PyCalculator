@@ -24,12 +24,12 @@ class Scicalculator(Calculator):
 	def power(self, a , b):
 		return (a**b)
 
-	def sqrroot(self, a)
+	def sqrroot(self, a):
 		return(a**(0.5))
 
 
 obj1 = Scicalculator("Pycalc")
-print("Welcome to pycalc v0.2.1")
+print("Welcome to pycalc v0.3")
 sci = input("Do you want to do exponentation or Square root?? y/n  ")
 if sci == "y":
 	c = ("Do ypu want to do exponentation?(y/n)")
@@ -42,9 +42,9 @@ if sci == "y":
 		results = obj1.sqrroot(a)
 
 elif sci == "n":
+	c = input("What do you want to do?(+ , - , / , *,)  ")
 	a = float(input("What is the first number?  "))
 	b = float(input("What is the second number?  "))
-	c = input("What do you want to do?(+ , - , / , *, **)  ")
 	if c == "+":
 		results = obj1.add(a,b)
 	elif c == "-":
