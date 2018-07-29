@@ -1,4 +1,4 @@
-#Rahul Pycalc v0.2.1
+#Rahul Pycalc v0.3
 class Calculator():
 
 	name = None
@@ -24,13 +24,22 @@ class Scicalculator(Calculator):
 	def power(self, a , b):
 		return (a**b)
 
+	def sqrroot(self, a)
+		return(a**(0.5))
+
+
 obj1 = Scicalculator("Pycalc")
 print("Welcome to pycalc v0.2.1")
-sci = input("Do you want to do power? y/n  ")
+sci = input("Do you want to do exponentation or Square root?? y/n  ")
 if sci == "y":
-	a = float(input("Name your number  "))
-	b = float(input("Name your power  "))
-	results = obj1.power(a, b)
+	c = ("Do ypu want to do exponentation?(y/n)")
+	if c == "y":	
+		a = float(input("Name your number  "))
+		b = float(input("Name your power  "))
+		results = obj1.power(a, b)
+	elif c == "n":
+		a = float(input("Enter your number for Square root."))
+		results = obj1.sqrroot(a)
 
 elif sci == "n":
 	a = float(input("What is the first number?  "))
