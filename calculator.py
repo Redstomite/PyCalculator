@@ -1,4 +1,4 @@
-#Rahul Pycalc v0.2
+#Rahul Pycalc v0.2.1
 class Calculator():
 
 	name = None
@@ -21,18 +21,16 @@ class Calculator():
 
 class Scicalculator(Calculator):
 
-	def power(self, a):
-		return (a*a)
-
-def printer(some_string):
-	print("Inside a funstion outside a class  "+some_string)
+	def power(self, a , b):
+		return (a**b)
 
 obj1 = Scicalculator("Pycalc")
-print("Welcome to pycalc v0.2")
+print("Welcome to pycalc v0.2.1")
 sci = input("Do you want to do power? y/n  ")
 if sci == "y":
-	a = int(input("Name your number  "))
-	results = obj1.power(a)
+	a = float(input("Name your number  "))
+	b = float(input("Name your power  "))
+	results = obj1.power(a, b)
 
 elif sci == "n":
 	a = float(input("What is the first number?  "))
